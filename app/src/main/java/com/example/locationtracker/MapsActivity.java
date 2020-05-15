@@ -35,7 +35,7 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
-// Trial comment to see how GitHub works
+// Trial comment to see how GitHub works -- not updated?
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
