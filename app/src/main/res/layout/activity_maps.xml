@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+STEP 6
+Step 5 was in MapsActivity.java file
+// Now we want the base layout to be frame layout instead of fragment - How?
+// Add code - <FrameLayout
+                    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         tools:context=".MapsActivity"
+
+STEP 7
+// Then cut-paste the following code from <fragment to before  android:layout_width="match_parent" in <FrameLayout
+// xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+STEP 8
+// close <FrameLayout tag with >
+// It will automatically do - ></FrameLayout>
+// Before </FrameLayout> cut the <fragment block of code and paste - meaning that FrameLayout is the base code and fragment is inside it
+// Also go to Design tab now and start adding edit text and button
+// Step 9 is in MapsActivity.java
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <EditText
+        android:id="@+id/etLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="225dp"
+        android:ems="10"
+        android:hint="Latitude"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Longitude"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="475dp"
+        android:text="update"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</FrameLayout>
+
+
