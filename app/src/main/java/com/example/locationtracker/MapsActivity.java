@@ -35,6 +35,8 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
+// Trial comment to see how GitHub works
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -228,5 +230,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Now do step 20
         locationManager.requestLocationUpdates(locationManager.NETWORK_PROVIDER, 1000, 50, locationListener);
        // step 24 is in on click update button
-    }   
+    }
 }
