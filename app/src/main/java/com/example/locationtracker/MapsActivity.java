@@ -35,7 +35,8 @@ import java.util.Map;
 
 import javax.annotation.Nullable;
 
-// Trial comment to see how GitHub works -- not updated? -- check again
+// Trial comment to see how GitHub works -- not updated? -- check again -- worked this time
+// How do i import the old version?
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
